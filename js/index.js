@@ -9,13 +9,24 @@
 
 
 console.log("Script Running!")
+let myName = "Jared Garalde"
+console.log(myName)
 //Define a function `getVowelCount()`
-
-
-
+function getVowelCount(aString) {
+    let lowerCaseString = aString.toLowerCase() 
+    let modifiedString = lowerCaseString.replaceAll("a", "")
+    modifiedString = modifiedString.replaceAll("e", "")
+    modifiedString = modifiedString.replaceAll("i", "")
+    modifiedString = modifiedString.replaceAll("o", "")
+    modifiedString = modifiedString.replaceAll("u", "")
+    modifiedString = modifiedString.replaceAll("y", "")
+    vowelsRemoved = lowerCaseString.length - modifiedString.length
+    return vowelsRemoved
+}
 
 //Define a variable `numVowelsInName` and log it out
-
+let numVowelsinName = getVowelCount(myName)
+console.log(numVowelsinName)
 
 
 
