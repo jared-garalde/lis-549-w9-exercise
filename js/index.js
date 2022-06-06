@@ -8,6 +8,7 @@
 
 
 
+console.log("Script Running!")
 //Define a function `getVowelCount()`
 
 
